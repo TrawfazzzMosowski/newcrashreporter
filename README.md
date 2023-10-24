@@ -37,7 +37,7 @@ newcrashreporter is a solution to find new crashes for a mobile app. Also setup 
 2. Create Synthetics API test [docs](https://docs.newrelic.com/docs/synthetics/synthetic-monitoring/scripting-monitors/write-synthetic-api-tests/)
 3. Run validate to test script
 
-- Results
+## Results
 There are two tables created in the NRDB:
 - CrashHistory that will keep a running list of crashes
 - CrashNewRecord this is what the alerts are looking at to send the new crash as an alert

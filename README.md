@@ -19,7 +19,7 @@ newcrashreporter is a solution to find new crashes for a mobile app. Also setup 
 - Install Alert
 1. Log into your NR account.
 2. Go to the Alerts & AI section of the NR UI and create a policy
-3. Get the Policy ID in the upper left hand corner
+3. Get the Policy ID in the upper left hand corner [Condition Image](image.png)
 4. Update the AccountID with the account ID
 5. Update the Policy ID with the one created in the earlier step
 6. open [graphQL UI](https://one.newrelic.com/nerdgraph-graphiql)

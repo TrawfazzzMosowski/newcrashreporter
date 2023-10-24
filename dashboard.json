@@ -1,0 +1,60 @@
+{
+    "name": "Crash Detail",
+    "description": null,
+    "permissions": "PUBLIC_READ_WRITE",
+    "pages": [
+      {
+        "name": "Crash Detail",
+        "description": null,
+        "widgets": [
+          {
+            "title": "Crash Detail",
+            "layout": {
+              "column": 1,
+              "row": 1,
+              "width": 12,
+              "height": 5
+            },
+            "linkedEntityGuids": null,
+            "visualization": {
+              "id": "viz.table"
+            },
+            "rawConfiguration": {
+              "facet": {
+                "showOtherSeries": false
+              },
+              "nrqlQueries": [
+                {
+                  "accountIds": [
+                    <your_accouint_id>
+                  ],
+                  "query": "SELECT appName, appVersion, crashLocation, crashException, device, osVersion, lastInteraction, sessionDuration from MobileCrash where crashLocation like {{crashlocationfilter}} SINCE 1 month ago"
+                }
+              ],
+              "platformOptions": {
+                "ignoreTimeRange": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "variables": [
+      {
+        "name": "crashlocationfilter",
+        "items": null,
+        "defaultValues": [
+          {
+            "value": {
+              "string": "Paste Crash"
+            }
+          }
+        ],
+        "nrqlQuery": null,
+        "title": "Crash Location",
+        "type": "STRING",
+        "isMultiSelection": null,
+        "replacementStrategy": "STRING"
+      }
+    ]
+  }

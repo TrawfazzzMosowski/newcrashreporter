@@ -32,7 +32,7 @@ newcrashreporter is a solution to find new crashes for a mobile app. Also setup 
 -   appname: name of the app in the NR Mobile UI
 -   accountid: is the id of the account being monitored
 -   graphQLKey: this is a API user Key [docs](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/)
--   insightsinsertK=key: [docs](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/)
+-   insightsinsertkey: [docs](https://docs.newrelic.com/docs/apis/intro-apis/new-relic-api-keys/)
 -   recommened we manage those with New Relic secure credentials [docs](https://docs.newrelic.com/docs/synthetics/synthetic-monitoring/using-monitors/store-secure-credentials-scripted-browsers-api-tests/)
 2. Create Synthetics API test [docs](https://docs.newrelic.com/docs/synthetics/synthetic-monitoring/scripting-monitors/write-synthetic-api-tests/)
 3. Run validate to test script
